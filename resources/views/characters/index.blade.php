@@ -17,13 +17,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($characters as $item)
+                    @forelse ($characters as $character)
                     <tr>
-                        <td>{{$characters->id}}</td>
-                        <td>{{$characters->common_name}}</td>
-                        <td>{{$characters->alterego}}</td>
-                        <td>{{$characters->first_appareance}}</td>
-                        <td>{{$characters->thumb}}</td>
+                        <td>{{$character->id}}</td>
+                        <td>{{$character->common_name}}</td>
+                        <td>{{$character->alterego}}</td>
+                        <td>{{$character->first_appareance}}</td>
+                        <td>
+                            <img width="50px" src="{{$character->thumb}}" alt="">    
+                        </td>
                         <td>
                             view - edit - delete
                         </td>

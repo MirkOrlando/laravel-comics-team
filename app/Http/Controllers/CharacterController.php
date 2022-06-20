@@ -14,8 +14,8 @@ class CharacterController extends Controller
     public function index()
     
     {
-        $character = config('db.characters');
-        return view ('/characters.index', compact('db.characters'));
+        $characters = Character::orderByDesc('id')->get();
+        return view ('/characters.index', compact('characters'));
     }
 
     /**
