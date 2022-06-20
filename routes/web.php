@@ -13,13 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Route::resource('NomeURI', 'NomeController'); */
+Route::resource('/characters', 'CharacterController');
+
+
 Route::get('/', function () {
     return view('homepage');
 })->name('homepage');
 
-Route::get('/characters', function () {
+/* Route::get('/characters', function () {
     return view('characters');
-})->name('characters');
+})->name('characters'); */
 
 Route::get('/comics', function () {
     $comics = config('db.comics');
