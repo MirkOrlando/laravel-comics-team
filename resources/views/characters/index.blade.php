@@ -27,7 +27,7 @@
                             <img width="50px" src="{{$character->thumb}}" alt="">    
                         </td>
                         <td>
-                            view - edit - delete
+                            <a href="{{route('characters.show', $character->id)}}">view</a> - edit - delete
                         </td>
                     </tr>
                         
