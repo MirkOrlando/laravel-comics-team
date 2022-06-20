@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Character;
 use Illuminate\Http\Request;
 
@@ -13,8 +12,10 @@ class CharacterController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    
     {
-        //
+        $character = config('db.characters');
+        return view ('/characters.index', compact('db.characters'));
     }
 
     /**

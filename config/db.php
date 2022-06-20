@@ -212,5 +212,44 @@ return [
                 "Joëlle Jones"
             ],
         ],
+    ],
+
+    'characters' => [
+        [
+            'common_name'=>"Bruce Wayne's",
+            'alterego'=>'Batman',
+            'thumb'=>'https://www.dccomics.com/sites/default/files/styles/character_thumb_160x160/public/Char_Profile_Batman_20190116_5c3fc4b40faec2.47318964.jpg?itok=u4BHrDeE',
+            'powers'=>'ricchezza',
+            'first_appareance'=>'1939-03-30',
+            'bio'=>"In the name of his murdered parents, Bruce Wayne wages eternal war on the criminals of Gotham City. He is vengeance. He is the night. He is Batman.
+
+            One of the most iconic fictional characters in the world, Batman has dedicated his life to an endless crusade, a war on all criminals in the name of his murdered parents, who were taken from him when he was just a child. Since that tragic night, he has trained his body and mind to near physical perfection to be a self-made Super Hero. He's developed an arsenal of technology that would put most armies to shame. And he's assembled teams of his fellow DC Super Heroes, like the Justice League, the Outsiders and Batman, Incorporated.
+            
+            A playboy billionaire by day, Bruce Wayne’s double life affords him the comfort of a life without financial worry, a loyal butler-turned-guardian and the perfect base of operations in the ancient network of caves beneath his family’s sprawling estate. By night, however, he sheds all pretense, dons his iconic scalloped cape and pointed cowl and takes to the shadowy streets, skies and rooftops of Gotham City."
+        ],
+        [
+            'common_name'=>'Selina Kyle',
+            'alterego'=>'Catwoman',
+            'thumb'=>'https://www.dccomics.com/sites/default/files/styles/character_thumb_160x160/public/Char_Profile_Catwoman_5c47c984ed1d66.81377433.jpg?itok=yHAKRa64',
+            'powers'=>'Doti feline',
+            'first_appareance'=>'1940-04-01',
+            'bio'=>"As deadly as she is beautiful, infamous cat-burglar Selina Kyle uses her nine lives to walk the razor's edge between light and darkness in Gotham City.
+
+            The Bat may be the king of the beasts of Gotham. But the Cat? The Cat is definitely the queen. Infamous burglar Selina Kyle is certainly one of the most iconic characters in the DC Universe—not because she's a superhero, per se, but because she's so good at stumping them. Motivated partly by her own self interest, partly by the fun of it all, Catwoman has been baffling Gotham City's heroes, both masked and unmasked, from the very beginning.
+            
+            An accomplished jewel thief and an occasional hero herself, Selina's murky moral compass has made her relationship with Batman complicated, to say the least. Still, the undeniable magnetism between Bat and Cat is one of Gotham's most reliable constants: wherever Catwoman goes, Batman is sure to follow, if only to take her down. It's a complicated game of cat-and-mouse (cat-and-bat?) that Bruce and Selina have been playing across the streets and rooftops of Gotham for a long, long time."
+        ],
+        [
+            'common_name'=>'Oswald Cobblepot',
+            'alterego'=>'Penguin',
+            'thumb'=>'https://www.dccomics.com/sites/default/files/styles/character_thumb_160x160/public/Char_Profile_Penguin_5c5250a8ad2683.23365592.jpg?itok=uSIJz6DH',
+            'powers'=>'mezza sega',
+            'first_appareance'=>'1929-04-01',
+            'bio'=>"Oswald Cobblepot. Not exactly a name designed to shake the pillars of Gotham’s dark criminal underworld. Maybe it’s his other name that strikes fear into the hearts of citizens both good and bad: The Penguin.
+
+            This is a villain fueled by a pathological rage that compels him to turn his odd physique, bird-like profile and awkward waddle into a well-dressed force for fear. No one knows more about what the evil forces of Gotham are up to at any given moment than he and he uses that information to blackmail, intimidate and corrupt anyone he can, especially when it’s in the service of bringing down Batman.
+            
+            They say you shouldn’t judge a book by its cover, but they also say evil is as evil does. A master manipulator, the Penguin is usually surrounded by violent henchmen who do his bidding without question. But when it comes down to a face-to-face, expect him to unleash a deadly barrage from a variety of umbrella weapons and other ingenious devices—often taking the form of fowl. And when all else fails, the Penguin will fight as dirty as they come, hand to hand combat doesn’t ruffle his feathers at all."
+        ]
     ]
 ];

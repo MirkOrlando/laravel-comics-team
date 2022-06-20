@@ -16,7 +16,7 @@
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRouteName() === 'characters' ? 'active' : '' }}"
-                            href="{{ route('characters') }}">Characters</a>
+                            href="{{ route('characters.index') }}">Characters</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }}"
