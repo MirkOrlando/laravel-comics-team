@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use App\Http\Requests\ComicRequest;
 
 class ComicController extends Controller
 {
@@ -15,7 +17,7 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
-        return view('admin.comics.index', compact('comics'));
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -25,7 +27,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        return view('admin.comics.create');
+        return view('comics.create');
     }
 
     /**
@@ -34,9 +36,11 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ComicRequest $request)
     {
-        //
+        $val_data = $request->validated();
+        Comic::create($val_data);
+        return redirect()->route('comics.index')->with('message', 'Comic created successfully');
     }
 
     /**

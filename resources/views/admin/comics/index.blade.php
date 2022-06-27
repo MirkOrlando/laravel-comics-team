@@ -8,6 +8,11 @@
                 <div class="btn btn-primary">New Comic</div>
             </div>
         </div>
+        @if (session('message'))
+            <div class="alert alert-success mt-2">
+                {{ session('message') }}
+            </div>
+        @endif
         <table class="table table-striped table-inverse">
             <thead class="thead-inverse">
                 <tr>
