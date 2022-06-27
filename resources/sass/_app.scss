@@ -1,13 +1,24 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//
+@use 'bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
-// Variables
-@import 'variables';
+/* variables */
 
-@import 'comic_show.scss';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+$primaryColor: #0282F9;
+$darkerColor: #1C1C1C;
+$darkColor: #303030;
+$paleDarkColor: #959595;
+$lightestColor: white;
+@mixin button {
+    display: inline-block;
+    color: $lightestColor;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all 250ms linear;
+}
 
 
 /* common */
