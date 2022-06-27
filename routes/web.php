@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,6 +43,9 @@ Route::get('/comics/{id}', function ($id) {
     }
 })->name('comics.show');
 
+
+/*---------------------------------------------------------------------------------*/
+
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
@@ -75,10 +78,18 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
+/*---------------------------------------------------------------------------------*/
+
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
 
-Auth::routes();
+    Route::get('/', 'HomeController@index')->name('dashboard');
+    Route::resource('comics', 'ComicController');
 
-Route::get('/home', 'HomeController@index')->name('home');
+});
+
+
+

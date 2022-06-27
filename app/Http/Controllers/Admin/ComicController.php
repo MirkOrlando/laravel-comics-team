@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Models\Character;
+namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
+use App\Models\Comic;
 use Illuminate\Http\Request;
 
-class CharacterController extends Controller
+class ComicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,10 +13,10 @@ class CharacterController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    
     {
-        $characters = Character::orderByDesc('id')->get();
-        return view ('/characters.index', compact('characters'));
+        $comics = Comic::orderByDesc('id')->get();
+        //dd($comics);
+        return view('admin.comics.index', compact('comics'));
     }
 
     /**
@@ -42,21 +43,21 @@ class CharacterController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Character  $character
+     * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function show(Character $character)
+    public function show(Comic $comic)
     {
-        return view('characters.show' , compact('character'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Character  $character
+     * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function edit(Character $character)
+    public function edit(Comic $comic)
     {
         //
     }
@@ -65,10 +66,10 @@ class CharacterController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Character  $character
+     * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Character $character)
+    public function update(Request $request, Comic $comic)
     {
         //
     }
@@ -76,10 +77,10 @@ class CharacterController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Character  $character
+     * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Character $character)
+    public function destroy(Comic $comic)
     {
         //
     }

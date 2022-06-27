@@ -1,5 +1,181 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+.primary_block {
+  height: 80px;
+  background-color: #0282F9;
+}
+
+.thumb {
+  margin-top: -20rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  border: 1px solid white;
+}
+
+.thumb .text_top {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.thumb .text_bottom {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.thumb .text_top,
+.thumb .text_bottom {
+  padding: 0.1rem 0.25rem;
+  font-size: 0.75rem;
+  color: white;
+  background-color: #00A9D9;
+}
+
+.comic h2,
+.comic h4,
+.comic .key {
+  color: #003F5E;
+}
+
+.comic .advertisement h5,
+.comic .price .values,
+.comic .sale_date .values {
+  color: #555555;
+}
+
+.comic .comic_top .info {
+  border-bottom: 2px solid #357739;
+  color: white;
+  background-color: #55BA59;
+}
+
+.comic .comic_top .info .light {
+  color: #B0FD9C;
+}
+
+.comic .comic_top .info .price {
+  padding-left: 1rem;
+}
+
+.comic .comic_top .info .availability div:first-child {
+  padding-right: 1rem;
+}
+
+.comic .comic_top .info button {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid #357739;
+  color: white;
+}
+
+.comic .comic_bottom {
+  background-color: #F6F6F6;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+.comic .comic_bottom h4,
+.comic .comic_bottom .artists,
+.comic .comic_bottom .writers,
+.comic .comic_bottom .series,
+.comic .comic_bottom .price,
+.comic .comic_bottom .sale_date {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.comic .comic_bottom h4 {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.comic .comic_bottom .artists,
+.comic .comic_bottom .writers,
+.comic .comic_bottom .series,
+.comic .comic_bottom .price,
+.comic .comic_bottom .sale_date {
+  padding: 0.5rem 0;
+}
+
+.comic .comic_bottom .key {
+  width: 150px;
+}
+
+.comic .comic_bottom .values {
+  width: calc(100% - 150px);
+}
+
+.comic .comic_bottom .artists > .values,
+.comic .comic_bottom .writers > .values,
+.comic .comic_bottom .series > .values {
+  color: #00BAE6;
+  line-height: 1rem;
+}
+
+.comic .comic_bottom .artists > .values > .value::after,
+.comic .comic_bottom .writers > .values > .value::after {
+  content: ",";
+}
+
+.comic .comic_bottom .artists > .values > .value:last-child::after,
+.comic .comic_bottom .writers > .values > .value:last-child::after {
+  content: "";
+}
+
+.banner {
+  border-top: 1px solid #E3E3E3;
+  background-color: #F6F6F6;
+  color: #9F9F9F;
+  /* D8D8D8; */
+  font-size: 0.9rem;
+}
+
+.banner .row {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  border-right: 1px solid #E3E3E3;
+}
+
+.banner .row .col {
+  width: 25% !important;
+}
+
+.banner .row .col:last-child {
+  display: none;
+}
+
+.banner .row .col .wrapper {
+  width: 100%;
+  padding: 1rem !important;
+  border-left: 1px solid #E3E3E3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+
+.banner .row .col .wrapper:hover {
+  transform: translate(0, -5px);
+}
+
+.banner .row .col .wrapper img {
+  height: 50px;
+  filter: brightness(0.8);
+  order: 1;
+}
+
+.banner .row .col .wrapper .text {
+  text-transform: uppercase;
+  font-weight: bold;
+  order: 0;
+}
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10960,5 +11136,236 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+/* common */
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.btn-primary {
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 250ms linear;
+  background-color: #0282F9;
+  padding: 0.75rem 3.25rem;
+}
+
+.btn-primary:hover {
+  box-shadow: inset 0 0 5px black;
+  background-color: #0863b8;
+}
+
+.btn-primary-outline {
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 250ms linear;
+  border: 4px solid #0282F9;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary-outline:hover {
+  border: 4px solid transparent;
+  box-shadow: inset 0 0 15px #0282F9;
+}
+
+header .header-top {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: #0282F9;
+  color: white;
+  font-weight: bold;
+}
+
+header .header-bottom nav {
+  height: 100%;
+}
+
+header .header-bottom nav .logo {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+header .header-bottom nav ul li a {
+  font-size: 0.9rem;
+  color: #303030;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  margin: 0 1rem;
+  height: 100%;
+  border-bottom: 6px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+header .header-bottom nav ul li a.active {
+  color: #0282F9;
+  border-color: #0282F9;
+}
+
+header .header-bottom nav ul li a:hover {
+  color: #0282F9;
+  border-color: #0282F9;
+}
+
+header .header-bottom nav .searchbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #0282F9;
+}
+
+header .header-bottom nav .searchbar input {
+  width: 100px;
+  border: none;
+  position: relative;
+}
+
+header .header-bottom nav .searchbar input:focus-visible {
+  outline: none;
+}
+
+header .header-bottom nav .searchbar .icon {
+  /*                   position: relative;
+                      &::before {
+                         content: 'Search';
+                         position: absolute;
+                         right: 100%;
+                     }
+  */
+}
+
+.hero {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.comics {
+  background-color: #1C1C1C;
+  color: white;
+}
+
+.comics h2 {
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  background-color: #0282F9;
+  padding: 0.75rem 2rem;
+  margin-top: -2rem;
+  text-transform: uppercase;
+}
+
+.comics .comic-card {
+  padding: 1rem 0.5rem;
+  transition: all 250ms linear;
+}
+
+.comics .comic-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.comics .comic-card .comic-cover img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.comics .comic-card .comic-title {
+  padding-top: 0.5rem;
+}
+
+.comics .actions {
+  padding: 0.5rem 0 2rem;
+  text-align: center;
+}
+
+.banner {
+  background-color: #0282F9;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.banner .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+
+.banner .wrapper:hover {
+  transform: translate(0, -10px);
+}
+
+.banner .wrapper img {
+  height: 50px;
+}
+
+.banner .wrapper .text {
+  text-transform: uppercase;
+}
+
+footer .footer-top {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: lightgrey;
+}
+
+footer .footer-top h4 {
+  text-transform: uppercase;
+}
+
+footer .footer-top a,
+footer .footer-top p {
+  font-size: 0.8rem;
+}
+
+footer .footer-top .logo-lg {
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .footer-bottom {
+  background-color: #303030;
+}
+
+footer .footer-bottom .social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .footer-bottom .social .text {
+  text-transform: uppercase;
+  color: #0282F9;
+  font-weight: bold;
+}
+
+footer .footer-bottom .social img {
+  margin-left: 1rem;
+  transition: all 250ms linear;
+}
+
+footer .footer-bottom .social img:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
