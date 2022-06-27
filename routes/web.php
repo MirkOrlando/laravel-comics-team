@@ -80,3 +80,5 @@ Route::get('/shop', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('admin/comics', 'ComicController@create');
